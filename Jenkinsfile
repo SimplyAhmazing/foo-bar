@@ -6,5 +6,10 @@ pipeline {
         sh 'ls -la .'
       }
     }
+    stage('run-build') {
+      steps {
+        sh './build'
+      }
+    }
   }
 }
